@@ -8,7 +8,6 @@ Topics
 * pods
 * controllers
 * services
-* intall `oc` client
 
 phippy goes to the zoo
 ----------------------
@@ -34,10 +33,11 @@ Node Components
 * kube-proxy
 * [container runtime via CRI](https://github.com/kubernetes/community/blob/master/contributors/devel/sig-node/container-runtime-interface.md)
 
-
-Links
-* [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
+Primary Link
 * [Overview of Kube Components](https://medium.com/@karthikeyan_krishnaswamy/overview-of-kubernetes-34d8e0e59b26)
+
+Supporting Link:
+* [Kubernetes Components](https://kubernetes.io/docs/concepts/overview/components/)
 
 pods
 ----
@@ -69,24 +69,6 @@ A service can be defined as a logical set of pods. It provides a single IP addre
 
 Link
 * [Services](https://kubernetes.io/docs/concepts/services-networking/service/)
-
-intall `oc` client
-------------------
-
-1. Install the Openshift oc client
-    * Pick the binary for your platform from the [okd release page](https://github.com/openshift/okd/releases/tag/4.5.0-0.okd-2020-09-04-180756) and put it in your PATH
-        * [Mac](https://github.com/openshift/okd/releases/download/4.5.0-0.okd-2020-09-04-180756/openshift-client-mac-4.5.0-0.okd-2020-09-04-180756.tar.gz)
-        * [Windows](https://github.com/openshift/okd/releases/download/4.5.0-0.okd-2020-09-04-180756/openshift-client-windows-4.5.0-0.okd-2020-09-04-180756.zip)
-        * [Linux](https://github.com/openshift/okd/releases/download/4.5.0-0.okd-2020-09-04-180756/openshift-client-linux-4.5.0-0.okd-2020-09-04-180756.tar.gz)
-        * Mac homebrew - `brew install openshift-cli`
-    * Log into the class Openshift cluster
-    * See class Slack for credentials
-2. Log in on the command line `oc login`
-    * Run `oc get nodes`
-    * Log into the Web UI
-3. Create a project/namespace that matches your name
-first initial + last name e.g. Timothy Allen = tallen
-    * Run `oc new-project <myname>`
 
 create and understand basic kubernetes resources
 ------------------------------------------------
