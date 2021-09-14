@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: helloworld-rc
+  labels:
+    app: helloworld
+spec:
+  replicas: 3
+  selector:
+    app: helloworld
+  template:
+    metadata:
+      name: helloworld
+      labels:
+        app: helloworld
+    spec:
+      containers:
+      - name: helloworld
+        image: allen13/helloworld:v0.1
